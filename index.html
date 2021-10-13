@@ -14,9 +14,9 @@
         .winner {
             color: #1f0;
             text-shadow:
-                0 0 5px #fff,
-                0 0 10px #fff,
-                0 0 20px #fff,
+                0 0 5px #1f0,
+                0 0 10px #1f0,
+                0 0 20px #1f0,
                 0 0 40px #1f0,
                 0 0 80px #1f0,
                 0 0 90px #1f0,
@@ -25,15 +25,26 @@
         }
 
         .loser {
-            color: red;
+            color: #f00;
+            text-shadow:
+                0 0 5px #f00,
+                0 0 10px #f00,
+                0 0 20px #f00,
+                0 0 40px #f00,
+                0 0 80px #f00,
+                0 0 90px #f00,
+                0 0 100px #f00,
+                0 0 150px #f00;
         }
 
         html {
+            /* Picture owned by Element5 Digital */
             background: url(pictures/arcade.jpg) no-repeat center center fixed;
             -webkit-background-size: cover;
             -moz-background-size: cover;
             -o-background-size: cover;
             background-size: cover;
+            
         }
 
         button,
@@ -54,6 +65,7 @@
                 0 0 90px #0ff,
                 0 0 100px #0ff,
                 0 0 150px #0ff;
+            transition: all 0.2s;
         }
 
         #playUpTo {
@@ -67,7 +79,7 @@
             justify-content: center;
             height: 100vh;
             font-family: 'Akaya Telivigala', cursive;
-            font-size: 32px;
+            font-size: 60px;
             color: #fff;
             text-shadow:
                 0 0 5px #fff,
@@ -83,15 +95,28 @@
         h1,
         div {
             text-align: center;
+            margin: 0;
         }
 
-        
+        button:hover,
+        select:hover {
+            box-shadow: rgb(90, 90, 90) 0px 30px 60px -12px inset,
+                rgb(90, 90, 90) 0px 18px 36px -18px inset;
+        }
 
+        h2 {
+            display: inline;
+            font-size: 30px;
+            padding: 0px 60px 0px 60px;
+        }
     </style>
 </head>
 
 <body>
     <div class="container">
+        <h1>SCORE KEEPER</h1>
+        <h2>player 1</h2>
+        <h2>player 2</h2>
         <h1><span id="p1Display">0 </span> to <span id="p2Display">0</span></h1>
         <div>
             <select name="" id="playUpTo" autocomplete="off">
