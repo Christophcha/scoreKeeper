@@ -1,0 +1,103 @@
+
+        .winner {
+            color: #1f0;
+            text-shadow:
+                0 0 5px #1f0,
+                0 0 10px #1f0,
+                0 0 20px #1f0,
+                0 0 40px #1f0,
+                0 0 80px #1f0,
+                0 0 90px #1f0,
+                0 0 100px #1f0,
+                0 0 150px #1f0;
+        }
+
+        .loser {
+            color: #f00;
+            text-shadow:
+                0 0 5px #f00,
+                0 0 10px #f00,
+                0 0 20px #f00,
+                0 0 40px #f00,
+                0 0 80px #f00,
+                0 0 90px #f00,
+                0 0 100px #f00,
+                0 0 150px #f00;
+        }
+
+        html {
+            /* Picture owned by Element5 Digital */
+            background: url(pictures/arcade.jpg) no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            
+        }
+
+        button,
+        select {
+            background-color: black;
+            border: 2px solid;
+            border-radius: 3px;
+            font-family: 'Akaya Telivigala', cursive;
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #fff;
+            text-shadow:
+                0 0 5px #fff,
+                0 0 10px #fff,
+                0 0 20px #fff,
+                0 0 40px #0ff,
+                0 0 80px #0ff,
+                0 0 90px #0ff,
+                0 0 100px #0ff,
+                0 0 150px #0ff;
+            transition: all 0.2s;
+        }
+
+        #playUpTo {
+            font-size: 16px;
+            font-weight: 900;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            font-family: 'Akaya Telivigala', cursive;
+            font-size: 60px;
+            color: #fff;
+            text-shadow:
+                0 0 5px #fff,
+                0 0 10px #fff,
+                0 0 20px #fff,
+                0 0 40px #0ff,
+                0 0 80px #0ff,
+                0 0 90px #0ff,
+                0 0 100px #0ff,
+                0 0 150px #0ff;
+        }
+
+        h1,
+        div {
+            text-align: center;
+            margin: 0;
+        }
+
+        button:hover,
+        select:hover {
+            box-shadow: rgb(90, 90, 90) 0px 30px 60px -12px inset,
+                rgb(90, 90, 90) 0px 18px 36px -18px inset;
+        }
+
+        h2 {
+            display: inline;
+            font-size: 30px;
+            padding: 0px 60px 0px 60px;
+            color: rgb(4, 4, 202);
+        }
+        h3{
+            font-size: 90px;
+        }
