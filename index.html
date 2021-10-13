@@ -1,42 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=h1, initial-scale=1.0">
-    <title>Document</title>
+    <title>Score Keeper</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap" rel="stylesheet">
 
     <style>
-        .winner{
-            color: green;
+        .winner {
+            color: #1f0;
+            text-shadow:
+                0 0 5px #fff,
+                0 0 10px #fff,
+                0 0 20px #fff,
+                0 0 40px #1f0,
+                0 0 80px #1f0,
+                0 0 90px #1f0,
+                0 0 100px #1f0,
+                0 0 150px #1f0;
         }
-        .loser{
+
+        .loser {
             color: red;
         }
+
+        html {
+            background: url(pictures/arcade.jpg) no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+
+        button,
+        select {
+            background-color: black;
+            border: 2px solid;
+            border-radius: 3px;
+            font-family: 'Akaya Telivigala', cursive;
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #fff;
+            text-shadow:
+                0 0 5px #fff,
+                0 0 10px #fff,
+                0 0 20px #fff,
+                0 0 40px #0ff,
+                0 0 80px #0ff,
+                0 0 90px #0ff,
+                0 0 100px #0ff,
+                0 0 150px #0ff;
+        }
+
+        #playUpTo {
+            font-size: 16px;
+            font-weight: 900;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            font-family: 'Akaya Telivigala', cursive;
+            font-size: 32px;
+            color: #fff;
+            text-shadow:
+                0 0 5px #fff,
+                0 0 10px #fff,
+                0 0 20px #fff,
+                0 0 40px #0ff,
+                0 0 80px #0ff,
+                0 0 90px #0ff,
+                0 0 100px #0ff,
+                0 0 150px #0ff;
+        }
+
+        h1,
+        div {
+            text-align: center;
+        }
+
+        
+
     </style>
 </head>
+
 <body>
-    
-    <h1><span id="p1Display">0 </span> to <span id="p2Display">0</span></h1>
-
-    <select name="" id="playUpTo" autocomplete="off">
-        <option value="">What score are you going up too?</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-        <option value="6">6</option>
-        <option value="7">7</option>
-        <option value="8">8</option>
-        <option value="9">9</option>
-        <option value="10">10</option>
-        <option value="11">11</option>
-        <option value="12">12</option>
-    </select>
-
-    <button id="p1Button">+1 for player 1</button>
-    <button id="p2Button">+1 for player 2</button>
-    <button id="reset">reset</button>
-    <script src="app.js"></script>
-
+    <div class="container">
+        <h1><span id="p1Display">0 </span> to <span id="p2Display">0</span></h1>
+        <div>
+            <select name="" id="playUpTo" autocomplete="off">
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+            </select>
+        </div>
+        <button id="p1Button">+1 for player 1</button>
+        <button id="p2Button">+1 for player 2</button>
+        <button id="reset">reset</button>
+        <script src="app.js"></script>
+    </div>
 </body>
+
 </html>
